@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Md Abdur Rahman, PhD | Nanofabrication & Photonics</title>
+
+  <meta
+    name="description"
+    content="Md Abdur Rahman, PhD — Materials scientist specializing in nanofabrication, thin-film optical coatings, photonic devices, and process integration."
+  >
+
+  <meta name="theme-color" content="#132c46">
+
+  <style>
+    :root {
+      --navy: #132c46;
+      --teal: #087e86;
+      --text: #26384a;
+      --muted: #566779;
+      --line: #dce5ed;
+      --background: #f5f8fb;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.75;
+    }
+
+    a {
+      color: var(--teal);
+      text-underline-offset: 4px;
+    }
+
+    a:hover {
+      text-decoration-thickness: 2px;
+    }
+
+    a:focus-visible {
+      outline: 3px solid #d69019;
+      outline-offset: 5px;
+    }
+
+    .wrap {
+      width: min(1120px, 90%);
+      margin-inline: auto;
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -100px;
+      left: 15px;
+      padding: 10px 15px;
+      background: white;
+      z-index: 10;
+    }
+
+    .skip-link:focus {
+      top: 10px;
+    }
+
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .navigation {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 15px 25px;
+      padding-block: 18px;
+    }
+
+    .brand {
+      margin-right: auto;
+      font-weight: 800;
+      color: var(--navy);
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+    }
+
+    nav a {
+      font-size: .9rem;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .hero {
+      padding-block: 75px;
+      color: white;
+      background:
+        radial-gradient(circle at 90% 15%, #28778a, transparent 45%),
+        linear-gradient(120deg, #132c46, #17465e);
+    }
+
+    .hero-layout {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .hero-copy {
+      max-width: 800px;
+    }
+
+    .eyebrow {
+      font-size: .8rem;
+      text-transform: uppercase;
+      letter-spacing: .13em;
+      color: #bce9ed;
+      font-weight: 700;
+    }
+
+    h1 {
+      font-size: clamp(2.4rem, 5.5vw, 4.2rem);
+      line-height: 1.12;
+      margin: 18px 0;
+      letter-spacing: -.04em;
+    }
+
+    .hero p {
+      color: #e0edf4;
+      font-size: 1.1rem;
+    }
+
+    .hero .role {
+      font-size: 1.2rem;
+    }
+
+    .profile-photo {
+      width: 210px;
+      height: 210px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid rgba(255, 255, 255, .55);
+      flex-shrink: 0;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 7px;
+      background: white;
+      border: 1px solid white;
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: 650;
+    }
+
+    .btn.outline {
+      background: transparent;
+      border-color: #b1d4df;
+      color: white;
+    }
+
+    section {
+      padding-block: 48px;
+      border-bottom: 1px solid var(--line);
+      scroll-margin-top: 20px;
+    }
+
+    h2 {
+      color: var(--navy);
+      font-size: 1.85rem;
+      margin: 0 0 20px;
+      letter-spacing: -.025em;
+    }
+
+    h3 {
+      color: var(--navy);
+      line-height: 1.45;
+      margin: 0 0 10px;
+      font-size: 1.15rem;
+    }
+
+    .intro {
+      max-width: 900px;
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      padding: 25px;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 13px;
+    }
+
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: .92rem;
+    }
+
+    .research-grid {
+      margin-top: 26px;
+    }
+
+    .research-card h3 {
+      padding-bottom: 14px;
+      border-bottom: 2px solid var(--line);
+    }
+
+    .research-card h4 {
+      margin: 22px 0 6px;
+      color: var(--teal);
+      font-size: 1rem;
+      line-height: 1.45;
+    }
+
+    .research-card h4 + p {
+      margin-top: 0;
+    }
+
+    .research-card .meta {
+      margin-top: 22px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+    }
+
+    .timeline {
+      border-left: 3px solid #b4d4df;
+      padding-left: 24px;
+    }
+
+    .item {
+      margin-bottom: 30px;
+    }
+
+    .item:last-child {
+      margin-bottom: 0;
+    }
+
+    .item p {
+      margin: 6px 0;
+    }
+
+    ul, ol {
+      padding-left: 23px;
+    }
+
+    li {
+      margin-bottom: 13px;
+    }
+
+    .publications li {
+      padding-bottom: 18px;
+      margin-bottom: 18px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .publications li:last-child {
+      border-bottom: 0;
+    }
+
+    .contact {
+      padding: 30px;
+      background: var(--navy);
+      border-radius: 13px;
+      color: white;
+    }
+
+    .contact h2 {
+      color: white;
+    }
+
+    .contact a {
+      color: #bce9ed;
+      overflow-wrap: anywhere;
+    }
+
+    footer {
+      padding: 25px;
+      text-align: center;
+      color: var(--muted);
+      font-size: .85rem;
+    }
+
+    @media (max-width: 750px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .navigation {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .hero {
+        padding-block: 50px;
+      }
+
+      .hero-layout {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .profile-photo {
+        width: 160px;
+        height: 160px;
+      }
+
+      section {
+        padding-block: 36px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <div class="wrap navigation">
+      <a class="brand" href="#home">Md Abdur Rahman, PhD</a>
+
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#experience">Experience</a>
+        <a href="#publications">Publications</a>
+        <a href="#patents">Patents</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HOME -->
+    <div class="hero" id="home">
+      <div class="wrap hero-layout">
+        <div class="hero-copy">
+          <div class="eyebrow">
+            Materials Science · Nanofabrication · Photonics
+          </div>
+
+          <h1>Md Abdur Rahman, PhD</h1>
+
+          <p class="role">
+            <strong>Nanofabrication &amp; Thin-Film Scientist</strong><br>
+            Optical Coatings · Photonic Devices · Process Integration
+          </p>
+
+          <p>
+            Translating materials concepts into functional devices
+            through optical modeling, precision fabrication,
+            advanced metrology, and industry-oriented process development.
+          </p>
+
+          <p>
+            Singapore University of Technology and Design · Singapore
+          </p>
+
+          <div class="buttons">
+            <a class="btn" href="#research">Explore my research</a>
+            <a class="btn outline" href="resume.pdf">Download résumé</a>
+            <a class="btn outline" href="cv.pdf">Download full CV</a>
+          </div>
+        </div>
+
+        <!-- OPTIONAL PHOTO:
+        After uploading profile.jpg, remove the comment markers
+        around the image below to display your photograph.
+        -->
+        <!--
+        <img
+          class="profile-photo"
+          src="profile.jpg"
+          alt="Portrait of Md Abdur Rahman"
+          width="210"
+          height="210"
+        >
+        -->
+      </div>
+    </div>
+
+    <div class="wrap">
+
+      <!-- ABOUT -->
+      <section id="about">
+        <h2>About me</h2>
+
+        <p>
+          I am a materials scientist based in Singapore with more than
+          10 years of experience in thin-film optical coatings,
+          photonic devices, advanced metrology, and CMOS-compatible
+          micro- and nanofabrication.
+        </p>
+
+        <p>
+          My work at the Singapore University of Technology and Design
+          (SUTD) connects optical design and fabrication with device
+          integration and technology transfer. My research spans
+          multispectral color filters, thermoelectric photodetectors,
+          structural-color coatings, and advanced nanoscale manufacturing.
+        </p>
+
+        <p>
+          I earned my PhD in Materials Science and Engineering from
+          KAIST in 2017 and subsequently conducted postdoctoral research
+          at the Korea Institute of Science and Technology (KIST).
+          I enjoy collaborating across academia and industry,
+          mentoring researchers, and developing practical fabrication
+          processes.
+        </p>
+      </section>
+
+      <!-- RESEARCH -->
+      <section id="research">
+        <h2>Research</h2>
+
+        <p class="intro">
+          My research connects materials science, optical design,
+          and micro- and nanofabrication. I work across modeling,
+          process development, fabrication, characterization,
+          and experimental validation, with an emphasis on
+          scalable manufacturing and device integration.
+        </p>
+
+        <div class="grid research-grid">
+
+          <article class="card research-card">
+            <h3>1. Multispectral Optical Filters &amp; CMOS Integration</h3>
+
+            <p>
+              Compact optical filter arrays for wavelength-selective
+              imaging and sensing.
+            </p>
+
+            <h4>Binary lithography &amp; reflow</h4>
+            <p>
+              Fabrication of multispectral Fabry–Pérot filter arrays
+              using binary lithography and reflow (BLR), including
+              at least 16 distinct filters produced using a single
+              binary-lithography/reflow process, with a minimum
+              feature size of 0.6 µm.
+            </p>
+
+            <h4>Optical cavity design</h4>
+            <p>
+              Design and simulation of resonant thin-film cavities
+              to control spectral transmission through material
+              selection and optical-layer thickness.
+            </p>
+
+            <h4>Post-CMOS integration</h4>
+            <p>
+              Development of fabrication flows for integrating
+              multispectral filters with LiteON-fabricated
+              photodiode chips, addressing process compatibility
+              and supporting technology transfer.
+            </p>
+
+            <p class="meta">
+              <strong>Selected work:</strong>
+              “Scaling Up Multispectral Color Filters with Binary
+              Lithography and Reflow (BLR),”
+              <em>Nanophotonics</em> (2024).
+            </p>
+          </article>
+
+          <article class="card research-card">
+            <h3>2. Structural Colors &amp; Functional Optical Coatings</h3>
+
+            <p>
+              Thin-film architectures that generate color through
+              optical interference and light–matter interactions.
+            </p>
+
+            <h4>Lithography-free coloration</h4>
+            <p>
+              Single-layer composite and multilayer coatings
+              for structural color generation on metallic
+              surfaces, including stainless steel, aluminum,
+              and gold.
+            </p>
+
+            <h4>Resonant &amp; nanocomposite coatings</h4>
+            <p>
+              Metal–insulator–metal cavities, lossy-dielectric
+              Fabry–Pérot structures, and metal–dielectric
+              nanocomposites for color tuning and expanded
+              color gamut.
+            </p>
+
+            <h4>Durable &amp; multifunctional surfaces</h4>
+            <p>
+              Robust optical coatings for decorative and
+              industrial applications, including collaborative
+              research on structural-color surfaces with
+              antiviral functionality.
+            </p>
+
+            <p class="meta">
+              <strong>Selected work:</strong>
+              Structural colors of gold,
+              <em>Advanced Photonics Research</em> (2024);
+              industrial-grade TiON-based coloration,
+              <em>Advanced Optical Materials</em> (2026).
+            </p>
+          </article>
+
+          <article class="card research-card">
+            <h3>3. Thermoelectric &amp; Plasmonic Photodetectors</h3>
+
+            <p>
+              Detector architectures that convert absorbed light
+              into electrical signals through photothermoelectric
+              processes.
+            </p>
+
+            <h4>Visible &amp; mid-infrared detection</h4>
+            <p>
+              Design and fabrication of thermoelectric
+              photodetectors using planar and nanostructured
+              architectures.
+            </p>
+
+            <h4>Plasmonic absorption enhancement</h4>
+            <p>
+              Collaborative investigation of interband plasmonic
+              nanoresonators to enhance optical absorption and
+              thermoelectric photodetection.
+            </p>
+
+            <h4>Thin-film cavities &amp; integration</h4>
+            <p>
+              Fabrication of resonant detector stacks, including
+              metallization, lift-off, and device integration
+              for direct photo-thermoelectric conversion.
+            </p>
+
+            <p class="meta">
+              <strong>Selected work:</strong>
+              “Thin-Film Cavities with Direct Photo-Thermoelectric
+              Conversion for Mid-Infrared Detection,”
+              <em>Advanced Optical Materials</em> (2024).
+            </p>
+          </article>
+
+          <article class="card research-card">
+            <h3>4. Quantum-Confined Materials &amp; Nanophotonic Devices</h3>
+
+            <p>
+              Integration of colloidal quantum dots and
+              semiconductor nanoplatelets with optical
+              micro- and nanostructures.
+            </p>
+
+            <h4>Microcavity exciton–polaritons</h4>
+            <p>
+              Collaborative research on tunable multiresonant
+              exciton–polaritons in colloidal quantum wells
+              coupled to optical microcavities.
+            </p>
+
+            <h4>Deterministic quantum-dot positioning</h4>
+            <p>
+              Contributions to controlled positioning of small
+              numbers of aqueous colloidal quantum dots for
+              integration into micro- and nanoscale structures.
+            </p>
+
+            <h4>Nanostructured light-emitting devices</h4>
+            <p>
+              Research interests and fabrication activities
+              involving quantum-dot- and nanoplatelet-enabled
+              optical devices, including LED and lasing
+              architectures.
+            </p>
+
+            <p class="meta">
+              <strong>Selected work:</strong>
+              Microcavity exciton–polaritons,
+              <em>Nano Letters</em> (2025);
+              deterministic quantum-dot positioning,
+              <em>Nanoscale</em> (2024).
+            </p>
+          </article>
+
+          <article class="card research-card">
+            <h3>5. 3D Nanoprinting &amp; Advanced Nanofabrication</h3>
+
+            <p>
+              Fabrication strategies for three-dimensional
+              micro- and nanoarchitectures with tailored
+              optical and materials properties.
+            </p>
+
+            <h4>Two-photon lithography &amp; glass nanoprinting</h4>
+            <p>
+              Experience with two-photon lithography and
+              collaborative research on nanoscale 3D printing
+              of glass for nanophotonic applications.
+            </p>
+
+            <h4>Post-print processing &amp; dimensional control</h4>
+            <p>
+              Contributions to pick-and-place processing for
+              uniform shrinking of 3D-printed micro- and
+              nanoarchitected materials.
+            </p>
+
+            <h4>Functional 3D optical structures</h4>
+            <p>
+              Collaborative work on selectively opaque and
+              transparent structures printed from a single
+              resin, and 3D-printed color-routing architectures
+              for imaging.
+            </p>
+
+            <p class="meta">
+              <strong>Selected work:</strong>
+              Glass nanoprinting,
+              <em>Science Advances</em> (2025);
+              uniform shrinking of 3D architectures,
+              <em>Nature Communications</em> (2023).
+            </p>
+          </article>
+
+          <article class="card research-card">
+            <h3>6. Magnetic Thin Films &amp; Functional Ferrites</h3>
+
+            <p>
+              Earlier research connecting materials processing,
+              nanoscale structure, and magnetic behavior.
+            </p>
+
+            <h4>Epitaxial L1₀-FePt for magnetic recording</h4>
+            <p>
+              Doctoral research on growth and coalescence of
+              epitaxial L1₀-FePt islands on MgO substrates for
+              potential heat-assisted magnetic recording
+              applications.
+            </p>
+
+            <h4>Microstructure &amp; magnetic domains</h4>
+            <p>
+              Investigation of thin-film continuity and
+              perpendicular magnetic domain structures using
+              high-resolution TEM, X-ray diffraction, and
+              complementary magnetic characterization.
+            </p>
+
+            <h4>Compositionally tuned spinel ferrites</h4>
+            <p>
+              MPhil research on lithium-substituted
+              nickel–magnesium ferrites, examining the
+              effects of composition on crystal structure
+              and magnetic properties.
+            </p>
+
+            <p class="meta">
+              <strong>Selected work:</strong>
+              Epitaxial L1₀-FePt growth,
+              <em>Journal of Applied Physics</em> (2016);
+              lithium-substituted ferrites,
+              <em>Physica B: Condensed Matter</em> (2011).
+            </p>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- TECHNICAL EXPERTISE -->
+      <section id="expertise">
+        <h2>Technical expertise</h2>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Thin films &amp; deposition</h3>
+            <p>
+              Magnetron sputtering; electron-beam and thermal
+              evaporation; atomic layer deposition; CVD and
+              PECVD; arc plasma deposition; spin coating;
+              dip coating.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Micro- &amp; nanofabrication</h3>
+            <p>
+              Photolithography; maskless laser lithography;
+              electron-beam lithography; two-photon lithography;
+              ICP-RIE and DRIE; wet/dry etching; metallization;
+              lift-off; post-CMOS process integration.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Characterization &amp; metrology</h3>
+            <p>
+              Ellipsometry; UV-Vis and microspectrophotometry;
+              Raman; TEM; SEM; AFM; XPS; XRD; EDS; optical
+              and surface profilometry; VSM and MFM.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Modeling &amp; analysis</h3>
+            <p>
+              Lumerical; OpenFilters; Python; MATLAB;
+              OriginPro; ImageJ; KLayout; Gatan Digital
+              Micrograph; MDI Jade.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience">
+        <h2>Professional experience</h2>
+
+        <div class="timeline">
+          <article class="item">
+            <h3>Singapore University of Technology and Design</h3>
+            <p class="meta">
+              Research appointments · Singapore · December 2021–Present
+            </p>
+            <ul>
+              <li>
+                Led fabrication activities in a LiteON
+                Semiconductor-supported collaboration on
+                CMOS-compatible multispectral color filters.
+              </li>
+              <li>
+                Developed post-CMOS integration processes,
+                resolved process-compatibility issues, and
+                supported technology transfer.
+              </li>
+              <li>
+                Developed visible and mid-infrared
+                thermoelectric photodetectors using
+                plasmonic and planar architectures.
+              </li>
+              <li>
+                Guided doctoral researchers through fabrication,
+                metallization, lift-off, and device-integration
+                processes.
+              </li>
+            </ul>
+          </article>
+
+          <article class="item">
+            <h3>Postdoctoral Researcher · KIST</h3>
+            <p class="meta">
+              Seoul, South Korea · July 2017–November 2021
+            </p>
+            <p>
+              Developed lithography-free structural-color
+              platforms and precision thin-film coatings
+              through analytical modeling, numerical
+              simulation, and experimental fabrication.
+            </p>
+          </article>
+
+          <article class="item">
+            <h3>Doctoral Researcher · KAIST</h3>
+            <p class="meta">
+              Daejeon, South Korea · February 2012–February 2017
+            </p>
+            <p>
+              Investigated epitaxial L1₀-FePt thin-film growth,
+              coalescence, and magnetic domain structures
+              for heat-assisted magnetic recording applications.
+            </p>
+          </article>
+
+          <article class="item">
+            <h3>Graduate Research &amp; Teaching Assistant · BUET</h3>
+            <p class="meta">
+              Dhaka, Bangladesh · April 2008–November 2010
+            </p>
+            <p>
+              Studied structural and magnetic properties
+              of lithium-substituted nickel–magnesium
+              ferrites and taught undergraduate physics
+              laboratory classes.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- PUBLICATIONS -->
+      <section id="publications">
+        <h2>Selected publications</h2>
+
+        <p class="intro">
+          Selected contributions across optical coatings,
+          nanophotonics, sensing, and advanced fabrication.
+          The full publication list is available in my
+          <a href="cv.pdf">academic CV</a>.
+        </p>
+
+        <ol class="publications">
+          <li>
+            <strong>
+              Industrial-Grade Structural Coloration with
+              Robust and Vivid TiON-Based Structures.
+            </strong><br>
+            M. A. Rahman†, D. Burak† et al.<br>
+            <em>Advanced Optical Materials</em> 14,
+            e03135 (2026).
+            <span class="meta">Equal contribution.</span>
+          </li>
+
+          <li>
+            <strong>
+              <a href="https://doi.org/10.1038/s41467-026-76072-8">
+                3D Printed Designer Color Routers with Low
+                Refractive Index for Low-Light Imaging.
+              </a>
+            </strong><br>
+            C.-F. Pan et al.<br>
+            <em>Nature Communications</em> (2026).
+            <span class="meta">Co-author.</span>
+          </li>
+
+          <li>
+            <strong>
+              Tunable Multiresonant Microcavity Exciton-Polaritons
+              in Colloidal Quantum Wells.
+            </strong><br>
+            N. C. Vu†, M. A. Rahman† et al.<br>
+            <em>Nano Letters</em> 25, 6109–6116 (2025).
+            <span class="meta">Equal contribution.</span>
+          </li>
+
+          <li>
+            <strong>
+              Nanoscale 3D Printing of Glass for Nanophotonics.
+            </strong><br>
+            W. Zhang et al.<br>
+            <em>Science Advances</em> 11, eadv0267 (2025).
+            <span class="meta">Co-author.</span>
+          </li>
+
+          <li>
+            <strong>
+              Scaling Up Multispectral Color Filters with
+              Binary Lithography and Reflow (BLR).
+            </strong><br>
+            M. A. Rahman et al.<br>
+            <em>Nanophotonics</em> 13, 3671–3677 (2024).
+            <span class="meta">First author.</span>
+          </li>
+
+          <li>
+            <strong>
+              Widening the Gamut of Structural Colors of
+              Gold via Insulator-Metal Bilayer Coatings.
+            </strong><br>
+            M. A. Rahman et al.<br>
+            <em>Advanced Photonics Research</em> 5,
+            2300324 (2024).
+            <span class="meta">First author.</span>
+          </li>
+
+          <li>
+            <strong>
+              Thin-Film Cavities with Direct Photo-Thermoelectric
+              Conversion for Mid-Infrared Detection.
+            </strong><br>
+            S. Wredh et al.<br>
+            <em>Advanced Optical Materials</em>,
+            2401450 (2024).
+            <span class="meta">Co-author.</span>
+          </li>
+
+          <li>
+            <strong>
+              Pick-and-Place Process for the Uniform Shrinking
+              of 3D Printed Micro- and Nano-Architected Materials.
+            </strong><br>
+            T. Mori et al.<br>
+            <em>Nature Communications</em> 14, 5876 (2023).
+            <span class="meta">Co-author.</span>
+          </li>
+        </ol>
+
+        <p class="meta">† Equal contribution.</p>
+      </section>
+
+      <!-- PATENTS -->
+      <section id="patents">
+        <h2>Patents &amp; patent applications</h2>
+
+        <p class="intro">
+          Co-inventor on the following selected inventions.
+        </p>
+
+        <ul>
+          <li>
+            <strong>
+              High-Durability Coloring Metal Member and
+              Method of Producing the Same.
+            </strong><br>
+            U.S. Patent US12292587B2.
+          </li>
+
+          <li>
+            <strong>
+              Noble Metal Member Capable of Expressing Vivid
+              Colors, and Method of Coloring Surface of
+              Noble Metal Member.
+            </strong><br>
+            European Patent EP4115764B1.
+          </li>
+
+          <li>
+            <strong>
+              Method for Manufacturing Multiple Filters with
+              Fabry-Perot Cavity Structure, Multispectral
+              Transmission Filter Array and Multispectral
+              Transmission Filter Structure.
+            </strong><br>
+            U.S. patent application publication US20240219708A1.
+          </li>
+
+          <li>
+            <strong>Thermoelectric Photodetector Device.</strong><br>
+            PCT international application publication
+            WO2025188243A1.
+          </li>
+        </ul>
+      </section>
+
+      <!-- EDUCATION -->
+      <section id="education">
+        <h2>Education</h2>
+
+        <div class="grid">
+          <article class="card">
+            <h3>PhD · Materials Science and Engineering</h3>
+            <p>KAIST, South Korea · 2017</p>
+            <p class="meta">
+              Advisor: Professor Joong Keun Park
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>MPhil · Physics</h3>
+            <p>
+              Bangladesh University of Engineering
+              and Technology · 2010
+            </p>
+            <p class="meta">
+              Advisor: Professor A. K. M. Akther Hossain
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>MSc · Physics</h3>
+            <p>Jagannath University, Bangladesh · 2007</p>
+          </article>
+
+          <article class="card">
+            <h3>BSc · Physics</h3>
+            <p>
+              National University (Jagannath College),
+              Bangladesh · 2005
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- SERVICE -->
+      <section id="service">
+        <h2>Leadership &amp; professional service</h2>
+
+        <ul>
+          <li>
+            Hands-on nanofabrication training for academic
+            researchers and industry engineers, covering
+            cleanroom protocols, process planning,
+            equipment operation, and safe tool use.
+          </li>
+          <li>
+            Doctoral researcher mentoring, fabrication
+            troubleshooting, and multidisciplinary
+            research support.
+          </li>
+          <li>
+            Technical contributions to industry-oriented
+            and government-funded research proposals.
+          </li>
+          <li>
+            Journal reviewing for
+            <em>Science Advances</em>, <em>Small</em>,
+            <em>Advanced Optical Materials</em>,
+            and <em>Optics Express</em>.
+          </li>
+        </ul>
+      </section>
+
+      <!-- AWARDS -->
+      <section id="awards">
+        <h2>Selected awards &amp; honors</h2>
+
+        <ul>
+          <li>
+            Best Poster Award · 11th International Conference
+            on Materials for Advanced Technologies,
+            Singapore · 2023.
+          </li>
+          <li>
+            Best Poster Award, co-author ·
+            Asia Light Conference, Singapore · 2023.
+          </li>
+          <li>
+            National Science and Information &amp; Communication
+            Technology (NSICT) Fellowship, Bangladesh.
+          </li>
+          <li>
+            Fully funded doctoral scholarship ·
+            KAIST · 2012–2017.
+          </li>
+        </ul>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <div class="contact">
+          <h2>Get in touch</h2>
+
+          <p>
+            For research collaborations, industry partnerships,
+            and professional opportunities in nanofabrication,
+            optical coatings, and photonic devices.
+          </p>
+
+          <p>Singapore</p>
+
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:abdur82@alumni.kaist.ac.kr">
+              abdur82@alumni.kaist.ac.kr
+            </a>
+          </p>
+
+          <p>
+            <strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/md-abdur-rahman-3228a443/">
+              Connect with me
+            </a>
+          </p>
+
+          <p>
+            <a href="resume.pdf">Professional résumé</a>
+            ·
+            <a href="cv.pdf">Full academic CV</a>
+          </p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    © Md Abdur Rahman · Personal professional website
+  </footer>
+</body>
+</html>
